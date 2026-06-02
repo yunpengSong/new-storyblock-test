@@ -1,5 +1,7 @@
 import './globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import StoryblokProvider from '@/components/StoryblokProvider';
+import BootstrapClient from '@/components/BootstrapClient';
 
 export const metadata = {
 	title: 'Create Next App',
@@ -12,6 +14,7 @@ export default function RootLayout({ children }) {
 		<StoryblokProvider>
 			<html lang="en">
 				<body>
+					<BootstrapClient />
 					{children}
 					<footer>All rights reserved © {currentYear} </footer>
 				</body>
